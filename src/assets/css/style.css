@@ -548,6 +548,12 @@ video {
   width: 100%;
 }
 
+@media (min-width: 0px) {
+  .container {
+    max-width: 0px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -887,19 +893,68 @@ video {
   transition-duration: 150ms;
 }
 
-.hover\:text-slate-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
-}
-
-.hover\:text-slate-200:hover {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
 .hover\:text-slate-100:hover {
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+@media (min-width: 0px) {
+  .xs\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .xs\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .xs\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .xs\:hidden {
+    display: none;
+  }
+
+  .xs\:h-64 {
+    height: 16rem;
+  }
+
+  .xs\:w-full {
+    width: 100%;
+  }
+
+  .xs\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .xs\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .xs\:object-center {
+    -o-object-position: center;
+       object-position: center;
+  }
+
+  .xs\:text-center {
+    text-align: center;
+  }
+
+  .xs\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xs\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xs\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -913,10 +968,6 @@ video {
 
   .sm\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .sm\:hidden {
-    display: none;
   }
 
   .sm\:h-64 {
@@ -962,8 +1013,50 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:max-w-full {
+    max-width: 100%;
+  }
+
+  .md\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .md\:rounded-l-full {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .md\:border-l-\[30px\] {
+    border-left-width: 30px;
+  }
+
+  .md\:border-red-500 {
+    --tw-border-opacity: 1;
+    border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
+  .md\:text-start {
+    text-align: start;
   }
 }
 
