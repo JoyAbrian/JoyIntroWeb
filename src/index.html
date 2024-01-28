@@ -18,34 +18,28 @@
 
     <!-- NAVIGATION BAR -->
 
-    <nav class="bg-red-500 flex justify-between items-center p-4 fixed top-0 w-full lg:flex">
-        <h1 class="text-4xl font-roboto font-bold italic cursor-pointer">Ruukaze</h1>
-        <div class="flex">
+    <nav class="bg-red-500 flex justify-between items-center p-4 fixed top-0 w-full">
+        <h1 class="text-4xl font-bold italic cursor-pointer text-white hover:text-slate-100 transition-all">Ruukaze</h1>
+        <div class="flex lg:flex sm:hidden">
             <a href="#profile" class="ml-4">Profile</a>
             <a href="#education" class="ml-4">Education</a>
             <a href="#hobbies" class="ml-4">Hobbies</a>
             <a href="#gallery" class="ml-4">Gallery</a>
             <a href="#contact" class="ml-4">Contact</a>
         </div>
-    </nav>
-
-    <nav class="bg-red-500 p-4 fixed top-0 w-full lg:hidden">
-        <div class="flex justify-between items-center">
-            <h1 class="text-4xl font-bold italic cursor-pointer text-white">Ruukaze</h1>
-            <div class="md:flex items-center space-x-4">
-                <div class="relative group">
-                    <button id="dropdown-toggle"
-                        class="text-slate-100 border border-slate-100 border-spacing-3 w-10 h-10 text-3xl rounded-lg">
-                        <i class="bi bi-list"></i>
-                    </button>
-                    <div id="dropdown-menu" class="hidden fixed top-0 left-0 right-0 h-full bg-red-500 text-white">
-                        <div class="flex flex-col items-center justify-center h-full">
-                            <a href="#profile" class="block px-4 py-2">Profile</a>
-                            <a href="#education" class="block px-4 py-2">Education</a>
-                            <a href="#hobbies" class="block px-4 py-2">Hobbies</a>
-                            <a href="#gallery" class="block px-4 py-2">Gallery</a>
-                            <a href="#contact" class="block px-4 py-2">Contact</a>
-                        </div>
+        <div class="items-center space-x-4 lg:hidden">
+            <div class="relative group">
+                <button id="dropdown-toggle"
+                    class="text-slate-100 border border-slate-100 border-spacing-3 w-10 h-10 text-3xl rounded-lg">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div id="dropdown-menu" class="hidden fixed top-0 left-0 right-0 h-full bg-red-500 text-white">
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <a href="#profile" class="block px-4 py-2">Profile</a>
+                        <a href="#education" class="block px-4 py-2">Education</a>
+                        <a href="#hobbies" class="block px-4 py-2">Hobbies</a>
+                        <a href="#gallery" class="block px-4 py-2">Gallery</a>
+                        <a href="#contact" class="block px-4 py-2">Contact</a>
                     </div>
                 </div>
             </div>

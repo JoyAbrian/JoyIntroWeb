@@ -745,14 +745,6 @@ video {
   background-color: rgb(69 10 10 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-30 {
-  --tw-bg-opacity: 0.3;
-}
-
-.bg-repeat {
-  background-repeat: repeat;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -889,6 +881,27 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:text-slate-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-100:hover {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:mt-4 {
     margin-top: 1rem;
@@ -900,6 +913,10 @@ video {
 
   .sm\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:h-64 {
@@ -983,50 +1000,6 @@ video {
   .lg\:border-red-500 {
     --tw-border-opacity: 1;
     border-color: rgb(239 68 68 / var(--tw-border-opacity));
-  }
-
-  .lg\:bg-opacity-75 {
-    --tw-bg-opacity: 0.75;
-  }
-
-  .lg\:bg-opacity-30 {
-    --tw-bg-opacity: 0.3;
-  }
-
-  .lg\:bg-\[url\(\'\.\.\/assets\/images\/red-grid\.jpg\'\)\] {
-    background-image: url('../assets/images/red-grid.jpg');
-  }
-
-  .lg\:bg-\[url\(\'\/assets\/images\/red-grid\.jpg\'\)\] {
-    background-image: url('/assets/images/red-grid.jpg');
-  }
-
-  .lg\:bg-\[url\(\'\.\/assets\/images\/red-grid\.jpg\'\)\] {
-    background-image: url('./assets/images/red-grid.jpg');
-  }
-
-  .lg\:bg-\[url\(\'assets\\images\'\)\] {
-    background-image: url('assets\images');
-  }
-
-  .lg\:bg-\[url\(\'assets\\images\\red-grid\.jpg\'\)\] {
-    background-image: url('assets\images\red-grid.jpg');
-  }
-
-  .lg\:bg-\[url\(\'assets\/images\/red-grid\.jpg\'\)\] {
-    background-image: url('assets/images/red-grid.jpg');
-  }
-
-  .lg\:bg-\[url\(\'\.\/images\/red-grid\.jpg\'\)\] {
-    background-image: url('./images/red-grid.jpg');
-  }
-
-  .lg\:bg-\[url\(\'\.\.\/images\/red-grid\.jpg\'\)\] {
-    background-image: url('../images/red-grid.jpg');
-  }
-
-  .lg\:bg-repeat {
-    background-repeat: repeat;
   }
 
   .lg\:p-0 {
