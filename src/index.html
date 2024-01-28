@@ -17,6 +17,7 @@
 <body class="select-none">
 
     <!-- NAVIGATION BAR -->
+    
     <nav class="bg-red-500 flex justify-between items-center p-4 fixed top-0 w-full lg:flex">
         <h1 class="text-4xl font-roboto font-bold italic cursor-pointer">Ruukaze</h1>
         <div class="flex">
@@ -27,6 +28,7 @@
             <a href="#contact" class="ml-4">Contact</a>
         </div>
     </nav>
+
     <nav class="bg-red-500 p-4 fixed top-0 w-full lg:hidden">
         <div class="flex justify-between items-center">
             <h1 class="text-4xl font-bold italic cursor-pointer text-white">Ruukaze</h1>
@@ -125,18 +127,7 @@
     </footer> -->
     <!-- FOOTER END -->
 
-    <script>
-        const toggleButton = document.getElementById('dropdown-toggle');
-        const dropdownMenu = document.getElementById('dropdown-menu');
-
-        toggleButton.addEventListener('click', () => {
-            dropdownMenu.classList.toggle('hidden');
-        });
-
-        function closeDropdown() {
-            dropdownMenu.classList.add('hidden');
-        }
-    </script>
+    <script src="js/navbar-dropdown.js"></script>
 </body>
 
 </html>
