@@ -17,17 +17,16 @@
 <body class="select-none">
 
     <!-- NAVIGATION BAR -->
-
     <nav class="bg-red-500 flex justify-between items-center p-4 fixed top-0 w-full">
         <h1 class="text-4xl font-bold italic cursor-pointer text-white hover:text-slate-100 transition-all">Ruukaze</h1>
-        <div class="flex md:flex xs:hidden">
+        <div class="flex text-white md:flex xs:hidden">
             <a href="#profile" class="ml-4">Profile</a>
             <a href="#education" class="ml-4">Education</a>
             <a href="#hobbies" class="ml-4">Hobbies</a>
             <a href="#gallery" class="ml-4">Gallery</a>
             <a href="#contact" class="ml-4">Contact</a>
         </div>
-        <div class="items-center space-x-4 md:hidden">
+        <div class="items-center md:hidden">
             <div class="relative group">
                 <button id="dropdown-toggle"
                     class="text-slate-100 border border-slate-100 border-spacing-3 w-10 h-10 text-3xl rounded-lg">
@@ -44,6 +43,11 @@
                 </div>
             </div>
         </div>
+
+        <button id="darkModeToggle" class="text-white">
+            <div class="dark:hidden text-black"><i class="bi bi-cloud-sun-fill"></i></div>
+            <div class="hidden dark:flex"><i class="bi bi-cloud-moon-fill"></i></div>
+        </button>
     </nav>
     <!-- NAVIGATION BAR END -->
 
@@ -51,7 +55,7 @@
     <section id="profile" class="mt-24 mb-5">
         <div class="font-roboto container px-6 font-inter max-w-md mx-auto xs:max-w-xl lg:flex lg:max-w-full lg:p-0">
             <div class="lg:p-12 lg:flex-1">
-                <h3 class="text-4xl font-bold text-slate-800 xs:text-4xl xs:text-center lg:text-start">Greetings, <span
+                <h3 class="text-4xl font-bold text-slate-800 xs:text-center lg:text-start">Greetings, <span
                         class="text-red-700">Traveler from Afar!</span></h3>
                 <img src="assets/images/myself.jpg" alt="GAMBAR"
                     class="mt-4 rounded-xl shadow-xl xs:mt-6 xs:h-64 xs:w-full xs:object-cover xs:object-center lg:hidden">
@@ -123,6 +127,7 @@
     <!-- FOOTER END -->
 
     <script src="js/navbar-dropdown.js"></script>
+    <script src="js/dark-mode-toggle.js"></script>
 </body>
 
 </html>
