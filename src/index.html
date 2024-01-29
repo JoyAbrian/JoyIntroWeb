@@ -18,19 +18,56 @@
 <body class="select-none">
 
     <!-- NAVIGATION BAR -->
-    
+    <nav class="p-5 bg-white shadow lg:flex lg:items-center lg:justify-between fixed top-0 w-full">
+        <div class="flex justify-between items-center ">
+            <span class="text-2xl font-inter font-bold cursor-pointer">
+                RUUKAZE
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 lg:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"><i class="bi bi-list"></i></ion-icon>
+            </span>
+        </div>
+
+        <ul class="lg:flex lg:items-center z-[-1] lg:z-auto lg:static absolute bg-white w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-xl hover:text-slate-500 duration-500">PROFILE</a>
+            </li>
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-xl hover:text-slate-500 duration-500">EDUCATION</a>
+            </li>
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-xl hover:text-slate-500 duration-500">HOBBIES</a>
+            </li>
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-xl hover:text-slate-500 duration-500">CONTACT</a>
+            </li>
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-xl hover:text-slate-500 duration-500">GALLERY</a>
+            </li>
+            <li class="mx-4 my-6 lg:my-0">
+                <a href="#" class="text-xl hover:text-slate-500 duration-500">CONTACT</a>
+            </li>
+
+            <button id="dark-mode-toggle" class="border border-slate-400 font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-slate-200 rounded ">
+                <input type="checkbox" id="toggle" class="hidden">
+                <span class="hidden dark:flex">DARK MODE</span>
+                <span class="dark:hidden">LIGHT MODE</span>
+            </button>
+        </ul>
+    </nav>
     <!-- NAVIGATION BAR END -->
 
     <!-- HERO SECTION -->
-    <section id="profile" class="mt-24 mb-5">
+    <section id="profile" class="mt-32 mb-5">
         <div class="font-roboto container px-6 max-w-md mx-auto xs:max-w-xl lg:flex lg:max-w-full lg:p-0">
             <div class="lg:p-12 lg:flex-1">
                 <h3 class="text-4xl font-bold text-slate-800 xs:text-center lg:text-start">Greetings, <span
-                        class="text-red-700">Traveler from Afar!</span></h3>
+                        class="text-cyan-800">Traveler from Afar!</span></h3>
                 <img src="assets/images/myself.jpg" alt="GAMBAR"
                     class="mt-4 rounded-xl shadow-xl xs:mt-6 xs:h-64 xs:w-full xs:object-cover xs:object-center lg:hidden">
                 <h2 class="mt-6 text-2xl font-semibold text-slate-800 xs:mt-8 xs:text-4xl xs:text-center lg:text-start">
-                    I am Joy Abrian Rantepasang</h2>
+                    I am <span class="text-blue-500">Joy Abrian Rantepasang</span></h2>
                 <p class="mt-2 text-slate-600 xs:mt-4 xs:text-xl xs:text-center lg:text-start">
                     "With each keystroke, the coder doth etch runes upon the digital scroll, crafting a spell to command
                     the obedient machinations of the arcane engine."
