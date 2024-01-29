@@ -8,6 +8,7 @@ module.exports = {
         'xs': '0px',
       },
       fontFamily: {
+        inter: ['Inter'],
         roboto: ['Roboto']
       }
     },
