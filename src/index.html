@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="select-none">
+<body class="select-none dark:bg-black transition-all ease-in duration-500">
 
     <!-- NAVIGATION BAR -->
     <nav class="p-5 bg-white dark:bg-black shadow lg:flex lg:items-center lg:justify-between fixed top-0 w-full transition-all ease-in duration-500">
@@ -24,7 +24,7 @@
                 RUUKAZE
             </span>
 
-            <span class="text-3xl cursor-pointer mx-2 lg:hidden block" onclick="Menu()">
+            <span class="text-3xl cursor-pointer mx-2 lg:hidden block dark:text-white" onclick="Menu()">
                 <ion-icon id="menuIcon" name="menu"><i class="bi bi-list"></i></ion-icon>
                 <ion-icon id="closeIcon" name="close" style="display: none;"><i class="bi bi-x-lg"></i></ion-icon>
             </span>
@@ -50,7 +50,7 @@
                 <a href="#" class="text-xl hover:text-slate-500 dark:text-white duration-100">CONTACT</a>
             </li>
 
-            <button id="dark-mode-toggle" class="border border-slate-400 font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-slate-200 rounded ">
+            <button id="dark-mode-toggle" class="border border-slate-400 font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-slate-200 dark:hover:text-black dark:text-white rounded ">
                 <input type="checkbox" id="toggle" class="hidden">
                 <span class="hidden dark:flex">LIGHT MODE</span>
                 <span class="dark:hidden">DARK MODE</span>
@@ -60,17 +60,17 @@
     <!-- NAVIGATION BAR END -->
 
     <!-- HERO SECTION -->
-    <div class="w-fit h-fit mx-auto">
+    <div class="w-fit h-fit mx-auto transition-all ease-in duration-500">
         <section id="profile" class="mt-32 mb-5">
             <div class="font-roboto container px-6 max-w-md mx-auto xs:max-w-xl lg:flex lg:max-w-full lg:p-0">
                 <div class="lg:p-12 lg:flex-1">
-                    <h3 class="text-4xl font-bold text-slate-800 xs:text-center lg:text-start">Greetings, <span
-                            class="text-cyan-800">Traveler from Afar!</span></h3>
+                    <h3 class="text-4xl font-bold text-slate-800 dark:text-white xs:text-center lg:text-start">Greetings, <span
+                            class="text-cyan-800 dark:text-cyan-300">Traveler from Afar!</span></h3>
                     <img src="assets/images/myself.jpg" alt="GAMBAR"
                         class="mt-4 rounded-xl shadow-xl xs:mt-6 xs:h-64 xs:w-full xs:object-cover xs:object-center lg:hidden">
-                    <h2 class="mt-6 text-2xl font-semibold text-slate-800 xs:mt-8 xs:text-4xl xs:text-center lg:text-start">
-                        I am <span class="text-blue-500">Joy Abrian Rantepasang</span></h2>
-                    <p class="mt-2 text-slate-600 xs:mt-4 xs:text-xl xs:text-center lg:text-start">
+                    <h2 class="mt-6 text-2xl font-semibold text-slate-800 dark:text-white xs:mt-8 xs:text-4xl xs:text-center lg:text-start">
+                        I am <span class="text-blue-500 dark:text-blue-400">Joy Abrian Rantepasang</span></h2>
+                    <p class="mt-2 text-slate-600 dark:text-white xs:mt-4 xs:text-xl xs:text-center lg:text-start">
                         "With each keystroke, the coder doth etch runes upon the digital scroll, crafting a spell to command
                         the obedient machinations of the arcane engine."
                     </p>
@@ -91,7 +91,7 @@
     </div>
     <!-- HERO SECTION END -->
 
-    <hr>
+    <!-- <hr> -->
 
     <!-- EDUCATION SECTION -->
     <!-- <section id="education" class="mt-5 mb-5">
@@ -100,7 +100,7 @@
     </section> -->
     <!-- EDUCATION SECTION END -->
 
-    <hr>
+    <!-- <hr> -->
 
     <!-- HOBBIES SECTION -->
     <!-- <section id="hobbies" class="mt-5 mb-5">
@@ -109,7 +109,7 @@
     </section> -->
     <!-- HOBBIES SECTION END -->
 
-    <hr>
+    <!-- <hr> -->
 
     <!-- GALLERY SECTION -->
     <!-- <section id="gallery" class="mt-5 mb-5">
@@ -118,7 +118,7 @@
     </section> -->
     <!-- GALLERY SECTION END -->
 
-    <hr>
+    <!-- <hr> -->
 
     <!-- CONTACT SECTION -->
     <!-- <section id="contact" class="mt-5 mb-5">
