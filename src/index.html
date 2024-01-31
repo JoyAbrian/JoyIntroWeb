@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="select-none dark:bg-black transition-all ease-in duration-500">
+<body class="select-none dark:bg-custom-1 transition-all ease-in duration-500">
 
     <!-- NAVIGATION BAR -->
-    <nav class="p-5 bg-white dark:bg-black shadow lg:flex lg:items-center lg:justify-between fixed top-0 w-full transition-all ease-in duration-500">
+    <nav class="p-5 bg-white dark:bg-custom-1 shadow lg:flex lg:items-center lg:justify-between fixed top-0 w-full z-50 transition-all ease-in duration-500">
         <div class="flex justify-between items-center ">
             <span class="text-2xl font-inter font-bold cursor-pointer dark:text-white">
                 RUUKAZE
@@ -31,8 +31,7 @@
             </span>
         </div>
 
-        <ul
-            class="lg:flex lg:items-center z-[-1] lg:z-auto lg:static absolute bg-white dark:bg-black w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <ul class="lg:flex lg:items-center z-0 lg:z-auto lg:static absolute bg-white dark:bg-custom-1 w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
             <li class="mx-4 my-6 lg:my-0">
                 <a href="#profile" class="text-xl hover:text-slate-500 dark:text-white duration-100">PROFILE</a>
             </li>
@@ -50,7 +49,7 @@
             </li>
 
             <button id="dark-mode-toggle"
-                class="border border-slate-400 font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-slate-200 dark:hover:text-black dark:text-white rounded ">
+                class="border border-slate-400 font-[Poppinwhite rounded-fullration-500 px-6 py-2 mx-4 hover:bg-slate-200 dark:hover:text-black dark:text-white rounded ">
                 <input type="checkbox" id="toggle" class="hidden">
                 <span class="hidden dark:flex">LIGHT MODE</span>
                 <span class="dark:hidden">DARK MODE</span>
@@ -60,11 +59,11 @@
     <!-- NAVIGATION BAR END -->
 
     <!-- HERO SECTION -->
-    <div class="w-full h-fit mx-auto transition-all ease-in duration-500">
-        <section id="profile" class="mt-32 mb-5">
+    <div class="w-full h-fit mx-auto transition-all ease-in duration-500 z-0">
+        <section id="profile" class="mt-24 mb-16">
             <div class="font-roboto container px-6 max-w-md mx-auto xs:max-w-xl lg:flex lg:max-w-full lg:p-0">
-                <div class="lg:p-12 lg:flex-1">
-                    <h3 class="text-4xl font-bold text-slate-800 dark:text-white xs:text-center lg:text-start">
+                <div class="lg:p-12 lg:flex-1 my-auto">
+                    <h3 class="text-4xl lg:text-6xl font-bold text-slate-800 dark:text-white xs:text-center lg:text-start">
                         Greetings, <span class="text-cyan-800 dark:text-cyan-300">Traveler from Afar!</span></h3>
                     <img src="assets/images/myself.jpg" alt="GAMBAR"
                         class="mt-4 rounded-xl shadow-xl xs:mt-6 xs:h-64 xs:w-full xs:object-cover xs:object-center lg:hidden">
@@ -83,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-5">
+                <div class="h-full">
                     <img src="assets/images/myself.jpg" alt="GAMBAR" class="hidden lg:block lg:rounded-l-full">
                 </div>
             </div>
@@ -121,11 +120,11 @@
     <hr>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="mt-5 mb-5">
-        <h1 class="text-4xl text-center font-roboto uppercase mb-8">More About Me?</h1>
-        <div class="wrapper">
-            <div class="slider">
-                <h2 class="text-2xl text-center mb-4">Language & Tools</h2>
+    <section id="contact" class="w-full h-fit bg-slate-300 relative z-0 dark:bg-custom-2 transition-all ease-in duration-500">
+        <h1 class="text-4xl text-center font-roboto uppercase mb-8 dark:text-white">More About Me?</h1>
+        <div class="wrapper z-0">
+            <div class="slider dark:border-white">
+                <h2 class="text-2xl text-center mb-4 dark:text-white">Language & Tools</h2>
                 <div class="slide-track">
                     <a target=”_blank” href="https://www.javascript.com/">
                         <div class="slide hover:scale-110 transition-all">
@@ -197,7 +196,7 @@
         </div>
         <div class="wrapper mt-10">
             <div class="slider">
-                <h2 class="text-2xl text-center mb-4">Follow Me On Social Media</h2>
+                <h2 class="text-2xl text-center mb-4 dark:text-white">Follow Me On Social Media</h2>
                 <div class="slide-track">
                     <a target=”_blank” href="https://www.facebook.com/WHATSUPDUCK33/">
                         <div class="slide hover:scale-110 transition-all">
@@ -226,7 +225,7 @@
                     </a>
                     <a target=”_blank” href="https://github.com/JoyAbrian">
                         <div class="slide hover:scale-110 transition-all">
-                            <img src="assets/images/more-section/github.jpg" alt="GitHub">
+                            <img src="assets/images/more-section/github.jpg" class="bg-white" alt="GitHub">
                         </div>
                     </a>
                     <a target=”_blank” href="https://steamcommunity.com/profiles/76561198827932189/">
@@ -271,7 +270,7 @@
     <!-- CONTACT SECTION END -->
 
     <!-- FOOTER -->
-    <footer class="bg-slate-300 p-5">
+    <footer class="bg-slate-400 p-5">
         <h1 class="text-center font-serif italic text-slate-700 text-sm">Copyright ©2024; Designed by <a href="https://github.com/JoyAbrian">Ruukaze</a></h1>
     </footer>
     <!-- FOOTER END -->
