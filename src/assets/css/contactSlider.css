@@ -15,8 +15,8 @@
 }
 
 .slider .slide-track {
-	-webkit-animation: scroll 10s linear infinite;
-	animation: scroll 10s linear infinite;
+	-webkit-animation: scroll 8s linear infinite;
+	animation: scroll 8s linear infinite;
 	display: flex;
 	width: calc(250px * 14);
 }
@@ -29,7 +29,7 @@
 .slider .slide img {
     width: 80%;
 	height: 100px;
-	border-radius: 10px;
+	border-radius: 100px;
 	border: 2px solid #bbbbbb;
 }
 
