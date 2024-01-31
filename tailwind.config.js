@@ -9,8 +9,9 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter'],
-        roboto: ['Roboto']
-      }
+        roboto: ['Roboto'],
+        poppins: ['Poppins']
+      },
     },
   },
   plugins: [],
