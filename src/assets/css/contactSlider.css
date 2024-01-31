@@ -51,3 +51,11 @@
 		transform: translateX(calc(-250px * 7));
 	}
 }
+
+.slide img {
+    width: 200px;
+	height: 100px;
+    border-radius: 100px;
+    border: 3px solid #bbbbbb;
+    object-fit: cover; /* Added to maintain aspect ratio without stretching */
+}
