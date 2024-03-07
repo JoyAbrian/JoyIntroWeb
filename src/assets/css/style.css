@@ -746,6 +746,10 @@ video {
   max-width: 36rem;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -754,6 +758,11 @@ video {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.columns-1 {
+  -moz-columns: 1;
+       columns: 1;
 }
 
 .flex-wrap {
@@ -770,6 +779,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .scroll-smooth {
@@ -1333,6 +1346,13 @@ video {
   }
 }
 
+@media (min-width: 640px) {
+  .sm\:columns-2 {
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:-m-2 {
     margin: -0.5rem;
@@ -1340,6 +1360,10 @@ video {
 
   .md\:p-2 {
     padding: 0.5rem;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
   }
 
   .md\:text-5xl {
@@ -1405,12 +1429,21 @@ video {
     flex: 1 1 0%;
   }
 
+  .lg\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
+  }
+
   .lg\:items-center {
     align-items: center;
   }
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:rounded-l-full {
@@ -1476,5 +1509,20 @@ video {
   .xl\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .xl\:columns-4 {
+    -moz-columns: 4;
+         columns: 4;
+  }
+}
+
+.\[\&\>img\:not\(\:first-child\)\]\:mt-5>img:not(:first-child) {
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .lg\:\[\&\>img\:not\(\:first-child\)\]\:mt-8>img:not(:first-child) {
+    margin-top: 2rem;
   }
 }
